@@ -14,13 +14,15 @@
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body{
     font-family: 'poppins', sans-serif;
     background-color: var(--bg);
     color: #fff;
-     min-height: 5000px; 
-    
+
 }
 
 .navbar {
@@ -146,7 +148,7 @@ body{
 }
 
 .about,.menu, .contact {
-    padding: 8rem 7% 1.4rem;
+    padding: 4rem 7% 1.4rem;
 }
 .about h2,.menu, .contact h2 {
     text-align: center;
@@ -212,6 +214,20 @@ body{
 .menu .row.menu-card .menu-card-title {
     margin: 1rem auto 0.5rem;
 }
+.contact .row form {
+    flex: 1 1 34rem;
+    padding: 1rem 9rem;
+    text-align: center;
+}
+.contact .row form .input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: #000000;
+    border: 5px solid #ffffff;
+    padding-left: 1rem;
+
+}
 
 /* media queriles */
 
@@ -220,13 +236,13 @@ body{
     html{
         font-size: 75%;
     }
-
+    
 }
 
 .contact .row {
     display: flex;
     margin-top: 2rem;
-    background-color: #222;
+    background-color: #ffffff;
     flex-wrap: wrap;
 }
 .content .row map {
@@ -234,6 +250,56 @@ body{
     width: 100%;
     object-fit: cover;
 }
+.contact .row from .input-group input {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    background: none;
+    color: #fff;
+}
+.contact .row form .btn {
+    margin-top: 3rem;
+    display: inline-block;
+    padding: 1rem 1rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: var(--primary);
+    cursor: pointer;
+}
+footer {
+    background-color: var(--primary);
+    text-align: center;
+    padding: 1rem 0 3rem;
+    margin-top: 3rem;
+}
+
+footer .social {
+    padding: 1rem 0;
+}
+
+footer .social a {
+    color: #fff;
+    margin: 1rem;
+}
+footer .social a:hover,
+footer .links a:hover {
+    color: var(--bag);
+}
+
+footer .links {
+    margin-bottom: 1.4rem;
+
+}
+
+footer .credit {
+    font-size: 0.8rem;
+}
+
+footer .credit a {
+    color: var(--bg);
+    font-weight: 700;
+}
+
 
 /* tablet */
 @media (max-width: 758px){
