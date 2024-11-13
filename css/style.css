@@ -19,7 +19,7 @@ body{
     font-family: 'poppins', sans-serif;
     background-color: var(--bg);
     color: #fff;
-     min-height: 3000px; 
+     min-height: 5000px; 
     
 }
 
@@ -91,7 +91,7 @@ body{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url('../img/foto.jpg');
+    background-image: url('../img/foto.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -145,16 +145,18 @@ body{
     box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
-.about,.menu {
-    padding: 6rem 7% 1.4rem;
+.about,.menu, .contact {
+    padding: 8rem 7% 1.4rem;
 }
-.about h2,.menu {
+.about h2,.menu, .contact h2 {
     text-align: center;
-    font-size: 2.6rem;
+    font-size: 2rem;
     margin-bottom: 3rem;
 }
 .about h2 span,
-.menu h2 span {
+.menu h2 span ,
+.contact h2 span
+{
     color: var(--primary);
 }
 .about .row {
@@ -182,6 +184,35 @@ body{
     font-weight: 100;
     line-height: 1.3;
 }
+.menu h2, .contact h2 {
+    margin-bottom: 1rem;
+}
+.menu p, .contact p {
+    text-align: center;
+    max-width: 30rem;
+    margin: auto;
+    font-weight: 100;
+    line-height: 1.3;
+    font-size: 9;
+}
+.menu .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: center;
+}
+.menu-card {
+    text-align: center;
+    padding: 1rem;
+}
+.menu .row .menu-card img {
+    border-radius: 50%;
+    width: 80%;
+}
+.menu .row.menu-card .menu-card-title {
+    margin: 1rem auto 0.5rem;
+}
+
 /* media queriles */
 
 /* laptop */
@@ -190,6 +221,18 @@ body{
         font-size: 75%;
     }
 
+}
+
+.contact .row {
+    display: flex;
+    margin-top: 2rem;
+    background-color: #222;
+    flex-wrap: wrap;
+}
+.content .row map {
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
 }
 
 /* tablet */
